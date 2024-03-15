@@ -1,0 +1,10 @@
+---
+title: "Getting Started"
+---
+
+# Accessing the system
+1. `kex_exchange_identification` error, try accessing the system using the following command:
+```bash
+ssh -p 4422 -o UserKnownHostsFile=/dev/null username@paramshakti.iitkgp.ac.in
+```
+

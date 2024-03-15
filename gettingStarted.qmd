@@ -1,0 +1,110 @@
+---
+title: "Getting Started"
+---
+
+```{=html}
+<style>
+  p {
+    text-align: justify;
+  }
+</style>
+```
+If you are facing any issues, we have documented the most common issues and their solutions in the [Troubleshooting](/troubleshooting.html) section.
+
+## Create an account
+
+## Accessing the system
+
+Assuming you have created an account with user name `username`, you can access the system using the following methods:
+
+### Unix/Linux/MacOs/Windows (10/11) users
+
+Open a terminal session and type the following command:
+
+#### Login to ParamShakti[^1]
+
+If you are connected to the IIT Kharagpur network (i.e. SSID like CAMPUS_SECURED, STUDENT_SECURED, GUEST_SECURED, ACADEMIC or on physical LAN)
+
+``` bash
+ssh username@paramshakti.iitkgp.ac.in -X
+```
+
+If you are outside the IIT Kharagpur network
+
+``` bash
+ssh -p 4422 username@paramshakti.iitkgp.ac.in -X
+```
+
+Whenever the newly created user on PARAM Shakti tries to login with the user Id and password (temporary, system generated) provided over the Email through PARAM Shakti support, he/she will next be prompted to create a “new password” of their choice which will change the temporary, system generated password.
+
+One can also later change the password using the following command:
+
+``` bash
+passwd
+```
+
+To set up a passwordless login:
+
+``` bash
+ssh-keygen -t rsa
+ssh-copy-id
+```
+
+To access the file system GUI, you can use the following command:
+
+``` bash
+nautilus
+```
+
+## Basic structure
+
+Each user has a home directory, which is the directory in which the user is placed after logging in. The home directory is `/home/username` (40GB for each user). The user can create, modify, and delete files and directories in their home directory. Moreover, the user can also access `/scratch/username` (2TB for each user) which is a temporary storage space for the user. The user can use this space to store temporary files and data.
+
+The directory structure of the system is as follows:
+
+``` ruby
+/
+├── home
+│   ├── username
+│   └── ...
+├── scratch
+│   ├── username
+│   └── ...
+└── ...
+```
+
+Write about how not to run job on login node
+
+## Basic Linux commands
+
+We recommend that you familiarize yourself with basic Linux commands as they will be used to run jobs. The following commands are useful for navigating the file system and managing files and directories:
+
+-   `ls`: List the contents of a directory.
+-   `cd`: Change the current directory.
+-   `pwd`: Print the current working directory.
+-   `mkdir`: Create a new directory.
+-   `rmdir`: Remove an empty directory.
+-   `rm`: Remove a file or directory.
+-   `cp`: Copy a file or directory.
+-   `mv`: Move a file or directory.
+-   `cat`: Print the contents of a file.
+-   `less`: View the contents of a file one page at a time.
+-   `find`: Search for files and directories.
+
+## Transferring files
+
+You can transfer files to and from the ParamShakti system and your local machine using the `scp` command. The following command can be used to transfer a file from the local machine ➡️ ParamShakti system
+
+``` bash
+scp /path/to/local/file1 username@paramshakti.iitkgp.ac.in:/path/to/remote/directory
+```
+
+The following command can be used to transfer a file from ParamShakti system ➡️ local machine
+
+``` bash
+scp /path/to/remote/file1 localusername@localmachine_IP:/path/to/local/directory
+```
+
+Add the `-r` option to the `scp` command to transfer directories.<br> Add the `-P 4422` option to the `scp` command to transfer files from outside the IIT Kharagpur network.
+
+[^1]: The `-X` option is used to enable X11 forwarding, which is required to run graphical applications on the remote system.

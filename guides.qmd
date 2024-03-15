@@ -1,0 +1,36 @@
+---
+title: "Guides"
+---
+<style>
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+    border-radius: 5px;
+    margin: 10px;
+    display: inline-block;
+  }
+
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  .container {
+    padding: 2px 16px;
+  }
+</style>
+
+The guides in this section are designed to help you get started with the basics of using the API. They cover the following topics:
+
+  <div class="card">
+    <a href="/guides/getting-started">
+      <h3>Getting Started</h3>
+      <p>Learn how to get started with the API.</p>
+    </a>
+  </div>
+  <div class="card">
+    <a href="/guides/getting-started">
+      <h3>Getting Started</h3>
+      <p>Learn how to get started with the API.</p>
+    </a>
+  </div>
