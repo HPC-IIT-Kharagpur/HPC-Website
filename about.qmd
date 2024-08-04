@@ -1,5 +1,33 @@
 ---
 title: "About"
 ---
+<style>
+    p {
+        text-align: justify;
+    }
+</style>
 
-About this site
+## HPClub
+
+We are a dedicated group of undergraduates passionate about high-performance computing. Our mission is to raise awareness about the supercomputer on our campus and to promote its use among students and faculty. We aim to host informative events and exciting competitions to engage our community in the fascinating world of high-performance computing. Stay tuned for upcoming events and opportunities to explore the cutting-edge capabilities of our supercomputer and enhance your skills in this dynamic field!
+
+<!-- make a subheading with teh anem our team -->
+
+### Our Team
+
+Prasanna Paithankar, Sourodeep Datta, Tanishq Prasad, Yash Sirvi
+
+## CCDS
+
+![](http://www.ccds.iitkgp.ac.in/images/home.jpg)
+
+High-Performance Computation based R&D in India is going to witness a new phase with the setting up of India's first state-of-the-art 1.3 PetaFlop High-Performance Computing facility and datacenter ecosystem at IIT Kharagpur under the National Supercomputing Mission (NSM). 
+
+More details about CCDS can be found [here](http://www.ccds.iitkgp.ac.in/).
+
+## PARAM Shakti
+![](http://www.ccds.iitkgp.ac.in/images/image-01.jpg)
+
+The supercomputer PARAM Shakti is based on a heterogeneous and hybrid configuration of Intel Xeon Skylake processors, and NVIDIA Tesla V100. The system was designed and implemented by HPC Technologies team, Centre for Development of Advanced Computing (C-DAC). It consists of 2 Master nodes, 8 Login nodes, 10 Service/Management nodes and 442 (CPU+GPU) nodes with total peak computing capacity of 1.66 (CPU+GPU) PFLOPS performance. PARAM Shakti systems are based on Intel Xeon SKL G-6148, NVIDIA Tesla V100 with total peak performance of 1.6 PFLOPS. The cluster consists of compute nodes connected with Mellanox (EDR) infiniBand interconnect network. The system uses the Lustre parallel file system. 
+
+More details about PARAM Shakti can be found [here](http://www.hpc.iitkgp.ac.in/).

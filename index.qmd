@@ -1,5 +1,61 @@
 ---
-title: "HPC"
+title: "Home"
 ---
 
+```{=html}
+<style>
+    p {
+        text-align: justify;
+    }
+</style>
+```
 
+<!-- Adding Param Shakti's image to the page: -->
+![](http://www.hpc.iitkgp.ac.in/assets/images/big/Slide-1.jpg)
+
+## High Performance Computing
+<!-- Explaining the concept of High Performance Computing (HPC) and its importance in the modern world.  -->
+High Performance Computing (HPC) integrates systems administration (including network and security knowledge) and parallel programming into a multidisciplinary field that combines digital electronics, computer architecture, system software, programming languages, algorithms and computational techniques.
+
+HPC is important for several reasons including:
+
+<ol>
+    <li style="font-weight: bold;">
+        <p><span style="font-weight: normal;">
+            <b>Speed:</b> HPC systems can perform complex calculations much faster than traditional computers.
+        </span></p>
+    </li>
+    <li style="font-weight: bold;">
+        <p><span style="font-weight: normal;">
+            <b>Scale:</b> HPC systems can handle large amounts of data and complex simulations that would be impossible on traditional computers.
+        </span></p>
+    </li>
+    <li style="font-weight: bold;">
+        <p><span style="font-weight: normal;">
+            <b>Scientific Discovery:</b> HPC is critical for many scientific disciplines, including climate modeling, molecular dynamics, computational fluid dynamics and genomic sequencing.
+        </span></p>
+    </li>
+    <li style="font-weight: bold;">
+        <p><span style="font-weight: normal;">
+            <b>Industrial Innovation:</b> HPC is used in many industries to improve product design, optimize manufacturing processes, and develop new materials.
+        </span></p>
+    </li>
+</ol>
+
+## PARAM Shakti
+<!-- Introducing Param Shakti and its importance in the context of HPC. -->
+PARAM Shakti is a supercomputer located at IIT Kharagpur. It is based on a heterogeneous and hybrid configuration of Intel Xeon Skylake processors, and NVIDIA Tesla V100.
+
+The system was designed and implemented by HPC Technologies team, Centre for Development of Advanced Computing (C-DAC), under the National Supercomputing Mission (NSM). More details about PARAM Shakti can be found [here](http://www.hpc.iitkgp.ac.in/HPCF/paramShakti).
+
+Students at IIT Kharagpur can access PARAM Shakti and utilize its computational power for research and academic purposes. Further information about how to access PARAM Shakti can be found [here](/gettingStarted.qmd). 
+
+## Workshops
+
+TBD
+
+---
+
+## Contact Us
+
+If you have any questions or need assistance, please email us at [temp@gmail.com](mailto:temp@gmail.com)
