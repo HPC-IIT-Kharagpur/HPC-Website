@@ -4,9 +4,9 @@ title: "Home"
 
 ```{=html}
 <style>
-  p {
-    text-align: justify;
-  }
+    p {
+        text-align: justify;
+    }
 </style>
 ```
 
