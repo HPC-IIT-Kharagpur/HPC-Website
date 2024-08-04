@@ -51,7 +51,7 @@ We are a dedicated group of undergraduates passionate about high-performance com
         <p>Prasanna Paithankar</p>
     </div>
     <div>
-        <img src="https://media.licdn.com/dms/image/D5603AQGeCqDgu6yRvQ/profile-displayphoto-shrink_400_400/0/1705663604499?e=1728518400&v=beta&t=nk3POng7y38DICeZIFlh1RfQHy7Zfq2Gbg3MrzvfoI8" alt="Sourodeep Datta" class="team-member">
+        <img src="https://media.licdn.com/dms/image/D5603AQG3jFOmLJ1QrQ/profile-displayphoto-shrink_200_200/0/1722783849420?e=1728518400&v=beta&t=RmGm62Tp9BKPg9Kg5V2yxPTDQzLVQPzGSOk-w8qgWGg" alt="Sourodeep Datta" class="team-member">
         <p>Sourodeep Datta</p>
     </div>
     <div>
