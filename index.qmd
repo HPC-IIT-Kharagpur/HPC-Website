@@ -28,7 +28,7 @@ HPC is important for several reasons including:
     <li style="font-weight: bold;">
         <p><span style="font-weight: normal;">
             <b>Scale:</b> HPC systems can handle large amounts of data and complex simulations that would be impossible on traditional computers.
-        </span></p>
+        <span></p>
     </li>
     <li style="font-weight: bold;">
         <p><span style="font-weight: normal;">

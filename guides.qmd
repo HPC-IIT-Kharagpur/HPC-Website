@@ -20,17 +20,8 @@ title: "Guides"
   }
 </style>
 
-The guides in this section are designed to help you get started with the basics of using the API. They cover the following topics:
-
-  <div class="card">
-    <a href="/guides/getting-started">
-      <h3>Getting Started</h3>
-      <p>Learn how to get started with the API.</p>
-    </a>
-  </div>
-  <div class="card">
-    <a href="/guides/getting-started">
-      <h3>Getting Started</h3>
-      <p>Learn how to get started with the API.</p>
-    </a>
-  </div>
+<ul>
+<li> <a href="/guides/torch.qmd"> Setting up Torch </a> </li>
+<li> <a href="/guides/jupyter.qmd"> Using Jupyter Notebooks</a> </li>
+<li> </li>
+</ul>
