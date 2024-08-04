@@ -15,7 +15,56 @@ We are a dedicated group of undergraduates passionate about high-performance com
 
 ### Our Team
 
-Prasanna Paithankar, Sourodeep Datta, Tanishq Prasad, Yash Sirvi
+```{=html}
+<style>
+.team-member {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.our-team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.our-team div {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+</style>
+<div class="our-team">
+    <!-- <div>
+        <img src="https://cse.iitkgp.ac.in/~soumya/soumya1.JPG" alt="Soumyajit Day" class="team-member">
+        <p>Soumyajit Day</p>
+    </div> -->
+    <div>
+        <img src="https://media.licdn.com/dms/image/D4D03AQG8jkb7P9DlYQ/profile-displayphoto-shrink_400_400/0/1713568672135?e=1728518400&v=beta&t=CGcwBKFr5r4fFzqNASnZUQOJSaPs_0vbZPoVbRPB3OY" alt="Prasanna Paithankar" class="team-member">
+        <p>Prasanna Paithankar</p>
+    </div>
+    <div>
+        <img src="https://media.licdn.com/dms/image/D5603AQGeCqDgu6yRvQ/profile-displayphoto-shrink_400_400/0/1705663604499?e=1728518400&v=beta&t=nk3POng7y38DICeZIFlh1RfQHy7Zfq2Gbg3MrzvfoI8" alt="Sourodeep Datta" class="team-member">
+        <p>Sourodeep Datta</p>
+    </div>
+    <div>
+        <img src="https://media.licdn.com/dms/image/D5603AQHB6ozQxDAVrQ/profile-displayphoto-shrink_400_400/0/1709645308411?e=1728518400&v=beta&t=_QVNTGP_iSv8Kp1pJKO3nCPOUTFben3zG8zQZme_iSk" alt="Tanishq Prasad" class="team-member">
+        <p>Tanishq Prasad</p>
+    </div>
+    <div>
+        <img src="https://media.licdn.com/dms/image/D5603AQFQAa9i_ES9bA/profile-displayphoto-shrink_400_400/0/1692697927134?e=1728518400&v=beta&t=jM6PrR3oD-qp9XmOjVcv-joLzU-U1U2aHGj6xyxVct0" alt="Yash Sirvi" class="team-member">
+        <p>Yash Sirvi</p>
+    </div>
+    <!-- Add more team members as needed -->
+</div>
+```
 
 ## CCDS
 
