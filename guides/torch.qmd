@@ -1,0 +1,23 @@
+---
+title: "Setting up Torch"
+---
+
+```{=html}
+<style>
+  p {
+    text-align: justify;
+  }
+</style>
+```
+Latest cuda version installed is 11.7 so don't just `pip install torch`. You'll have to compile torch with correct cuda version.
+
+For `cuda 11.7` use the following command to install pytorch:
+
+```bash
+conda install pytorch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 pytorch-cuda=11.7 -c pytorch -c nvidia
+# or use pip
+pip install torch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2
+```
+
+- Use `module load compiler/cuda/11.7` in your job script before submitting the job on gpu nodes.
+- see: <a href=https://pytorch.org/get-started/previous-versions/ target="_blank">Pytorch Previous Version</a>

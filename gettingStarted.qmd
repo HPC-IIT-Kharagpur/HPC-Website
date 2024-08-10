@@ -73,7 +73,20 @@ The directory structure of the system is as follows:
 └── ...
 ```
 
-Write about how not to run job on login node
+- `/home/username` 
+    - 40GB storage and 50GB hard limit
+    - Is backed up regularly
+    - Use it to store important files, outputs, logs, etc
+    - Don't store datasets here
+    - **Don't submit jobs from here.** You will be sent a warning through mail if you do so
+- `/scratch/username`
+    - 2TB storage
+    - Does not have a backup
+    - Use it to store datasets, code, etc.
+    - Recommended to submit jobs from here
+    - Usually jobouts are supposed to be temporary and thus stored in `/scratch/username`
+    - Export job outputs to `/home/username` if needed.
+
 
 ## Basic Linux commands
 
@@ -106,5 +119,18 @@ scp /path/to/remote/file1 localusername@localmachine_IP:/path/to/local/directory
 ```
 
 Add the `-r` option to the `scp` command to transfer directories.<br> Add the `-P 4422` option to the `scp` command to transfer files from outside the IIT Kharagpur network.
+
+# Setting up Conda
+Follow the instructions given <a href="https://docs.conda.io/projects/miniconda/en/latest/" target="_blank">here</a>
+
+```bash
+mkdir -p ~/miniconda3
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
+bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
+rm -rf ~/miniconda3/miniconda.sh
+
+~/miniconda3/bin/conda init bash
+~/miniconda3/bin/conda init zsh
+```
 
 [^1]: The `-X` option is used to enable X11 forwarding, which is required to run graphical applications on the remote system.

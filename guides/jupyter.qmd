@@ -1,0 +1,97 @@
+---
+title: "Using Jupyter"
+---
+
+```{=html}
+<style>
+  p {
+    text-align: justify;
+  }
+</style>
+```
+
+This guide will help you set up and run a Jupyter Notebook on a GPU cluster.
+
+## Prerequisites 
+
+1. Make sure you have `jupyter` installed in your environment.
+2. Install all the required packages beforehand. There is no internet access on the GPU cluster.
+
+## Steps
+
+### 1. Submit an Interactive GPU Job
+
+Open a terminal and submit an interactive bash job to the GPU cluster:
+
+```bash
+srun -p gpu --time=HH:MM:SS --gres=gpu:N --pty bash
+```
+
+Replace:
+
+- `HH:MM:SS` with your desired job duration (e.g., 04:00:00 for 4 hours)
+- `N` with the number of GPUs you need (e.g., 1 or 2). You need to be privileged user to request more than 1 GPU.
+
+### 2. Set Up Your Environment
+
+Once you're in the interactive shell:
+
+1. Activate your Python environment:
+   ```bash
+   conda activate your_environment_name
+   ```
+
+2. (Optional) Use `screen` for session persistence:
+   ```bash
+   screen -S jupyter_session
+   ```
+   This allows you to detach and reattach to your session. Press `Ctrl+A` then `D` to detach, and use `screen -r jupyter_session` to reattach.
+   
+   See [this guide](https://www.gnu.org/software/screen/manual/screen.html) for more information.
+
+### 3. Start Jupyter Notebook
+
+1. Get the GPU node's IP address:
+   ```bash
+   hostname -i
+   ```
+   Note down this IP address.
+
+2. Launch Jupyter Notebook:
+   ```bash
+   jupyter notebook --port 8888 --no-browser
+   ```
+   You can change the port number if needed.
+
+3. Copy one of the full links provided in the output, which looks like:
+   ```
+   http://localhost:8888/tree?token=abcdef1234567890
+   ```
+
+### 4. Set Up SSH Tunnel
+
+On your local machine:
+
+1. Open a new terminal window.
+2. Create an SSH tunnel with the following command:
+   ```bash
+   ssh -t -t username@paramshakti.iitkgp.ac.in -L localhost:8888:localhost:8888 ssh username@gpu_node_ip -L localhost:8888:localhost:8888
+   ```
+   Replace:
+   - `username` with your actual username
+   - `gpu_node_ip` with the IP address you noted in step 3.1
+   - `8888` with the actual port number if you used a different one
+
+### 5. Access Jupyter Notebook
+
+1. Open a web browser on your local machine.
+2. Paste the Jupyter Notebook URL you copied in step 3.3.
+3. You should now see the Jupyter Notebook interface running on the GPU cluster.
+
+## Troubleshooting
+
+- If you encounter port conflicts, try using a different port number in steps 3.2 and 4.2.
+- Make sure your local firewall isn't blocking the chosen port.
+- If you're having trouble with the SSH tunnel, check that you have the necessary permissions and that your SSH key is set up correctly.
+
+Remember to save your work regularly and close the Jupyter Notebook properly when you're done to free up GPU resources for others.
